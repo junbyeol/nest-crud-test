@@ -9,7 +9,7 @@ export class CatsService {
         this.cats.push(cat);
     }
 
-    findAll(): Cat[] {
+    async findAll(): Promise<Cat[]> {
         return this.cats
     }
 }
